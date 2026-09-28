@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10160f">
+  <meta name="description" content="BrotanMC — Minecraft новости, моды, ресурспаки и сервера.">
+  <title>BrotanMC — Minecraft Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="BrotanMC — главная"><span class="brand-icon">⛏</span><span>BROTAN<span class="green">MC</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="nav-link active" href="#home">Главная</a>
+      <a class="nav-link" href="#news">Новости</a>
+      <a class="nav-link" href="#mods">Моды</a>
+      <a class="nav-link" href="#servers">Сервера</a>
+    </nav>
+    <a class="header-button" href="#discover">Исследовать ↗</a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> ТВОЙ MINECRAFT HUB</div>
+        <h1>Твой мир.<br><span class="green">Твои правила.</span></h1>
+        <p class="hero-text">Всё для твоего следующего приключения: новости, моды, полезные сборки и игровые сервера — в одном месте.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#discover">Начать исследовать <span>→</span></a>
+          <a class="button button-ghost" href="#servers">Найти сервер</a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✦</span> Сделано игроками — для игроков</div>
+      </div>
+      <div class="hero-art" aria-label="Пиксельный блок травы">
+        <div class="art-glow"></div>
+        <div class="floating-block"><div class="block-top"></div><div class="block-front"></div><div class="block-side"></div></div>
+        <div class="art-label"><span class="label-dot"></span> Время приключений</div>
+        <span class="pixel pixel-one"></span><span class="pixel pixel-two"></span><span class="pixel pixel-three"></span>
+      </div>
+    </section>
+
+    <section class="stats section-wrap" aria-label="Разделы сайта">
+      <div><span class="stat-icon">▦</span><strong>Моды и сборки</strong><small>Найди свой стиль игры</small></div>
+      <div><span class="stat-icon">◈</span><strong>Игровые сервера</strong><small>Приключения с друзьями</small></div>
+      <div><span class="stat-icon">✧</span><strong>Новости Minecraft</strong><small>Будь в курсе обновлений</small></div>
+    </section>
+
+    <section class="content-section section-wrap" id="discover">
+      <div class="section-heading"><div><div class="eyebrow">ТВОЙ СЛЕДУЮЩИЙ ШАГ</div><h2>Исследуй <span class="green">BrotanMC</span></h2></div><p>Выбирай направление и отправляйся в игру.</p></div>
+      <div class="search-row"><label for="siteSearch">⌕</label><input id="siteSearch" type="search" placeholder="Найти моды, новости, сервера..."><span class="search-hint">ПОИСК</span></div>
+      <div class="card-grid" id="cardGrid">
+        <article class="feature-card" data-search="новости обновления minecraft snapshot">
+          <div class="card-visual visual-news"><span class="visual-symbol">☀</span><span class="visual-tag">НОВОСТИ</span></div>
+          <div class="card-content"><div class="card-meta">БУДЬ В КУРСЕ</div><h3>Мир Minecraft</h3><p>Новости игры, обновления и интересные события сообщества.</p><a href="#news" class="card-link">Читать новости <span>↗</span></a></div>
+        </article>
+        <article class="feature-card" data-search="моды mods fabric forge оптимизация">
+          <div class="card-visual visual-mods"><span class="visual-symbol">⚙</span><span class="visual-tag">МОДЫ</span></div>
+          <div class="card-content"><div class="card-meta">ИЗМЕНИ ИГРУ</div><h3>Моды и сборки</h3><p>Новые механики, удобные улучшения и идеи для сборок.</p><a href="#mods" class="card-link">Смотреть моды <span>↗</span></a></div>
+        </article>
+        <article class="feature-card" data-search="сервера server multiplayer ip играть вместе">
+          <div class="card-visual visual-servers"><span class="visual-symbol">⌘</span><span class="visual-tag">СЕРВЕРА</span></div>
+          <div class="card-content"><div class="card-meta">ИГРАЙ ВМЕСТЕ</div><h3>Найди свой сервер</h3><p>Ищи место для выживания, мини-игр и игры с друзьями.</p><a href="#servers" class="card-link">Найти сервер <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Ничего не найдено. Попробуй другой запрос.</p>
+    </section>
+
+    <section class="community section-wrap" id="news">
+      <div class="community-mark">✦</div><div><div class="eyebrow">СООБЩЕСТВО</div><h2>Следующее приключение <span class="green">начинается здесь.</span></h2><p>Сайт развивается — новые разделы и материалы появятся позже.</p></div><a class="button button-primary" href="#home">На главную ↑</a>
+    </section>
+    <section class="anchor-section section-wrap" id="mods"><span class="anchor-icon">⚙</span><div><h2>Моды</h2><p>Каталог модов скоро появится. Пока это стартовая страница BrotanMC.</p></div></section>
+    <section class="anchor-section section-wrap" id="servers"><span class="anchor-icon">⌘</span><div><h2>Сервера</h2><p>Список серверов и IP можно будет добавить сюда.</p></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-icon">⛏</span><span>BROTAN<span class="green">MC</span></span></a><span>Неофициальный сайт сообщества Minecraft.</span><span>© 2026 BrotanMC</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
